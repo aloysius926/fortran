@@ -1,8 +1,9 @@
 program root_finding
-  ue nrtype
+  use nrtype
   implicit none
   real(dp), dimension(2) :: x
   real(dp) :: a, b, c
+  integer :: n 
   a = 1.0_dp
   b = 100000.0_dp
   c = 10
