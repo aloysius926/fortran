@@ -1,6 +1,6 @@
 program root_finding
-  INTEGER, PARAMETER :: SP = KIND(1.0)
-  INTEGER, PARAMETER :: DP = KIND(1.0D0)
+  ue nrtype
+  implicit none
   real(dp), dimension(2) :: x
   real(dp) :: a, b, c
   a = 1.0_dp
