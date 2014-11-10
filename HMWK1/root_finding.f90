@@ -11,9 +11,10 @@ program root_finding
   do n=-1,-8,-1
     print *, n
     call find_roots_1step(a,b,c**n,x)
-    print *, x
+
+    print *, "One Step", x," ",sum(x)," ",x(1)*x(2)
     call find_roots_2step(a,b,c**n,x)
-    print *, x
+    print *, "Two Step", x," ",sum(x)," ",x(1)*x(2)
   end do
 
   contains
